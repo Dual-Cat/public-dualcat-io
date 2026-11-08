@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dual Cat</title>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Dual Cat" />
+<meta property="og:description" content="Game Editor and Game Publisher" />
+<meta property="og:image" content="https://www.dualcat.io/studio/img/logo_plain_nogradient_512.png" />
+<script>
+(function () {
+  var android = null;
+  var ios = 'https://itunes.apple.com/app/id1471317275';
+  var ua = navigator.userAgent;
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var target = '/';
+  if (android && /Android/i.test(ua)) target = android;
+  else if (isIOS) target = ios;
+  location.replace(target);
+})();
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ER5NN0LP8B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+  try { var c = JSON.parse(localStorage.getItem('dc_consent')); if (c && c.v === 'granted' && Date.now() - c.t < 15724800000) gtag('consent', 'update', {analytics_storage: 'granted'}); } catch (e) {}
+  gtag('js', new Date());
+  gtag('config', 'G-ER5NN0LP8B');
+</script>
+</head>
+<body>
+<p><a href="https://itunes.apple.com/app/id1471317275">Download on the App Store</a></p>
+<p><a href="/">dualcat.io</a></p>
+</body>
+</html>
